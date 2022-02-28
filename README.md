@@ -88,29 +88,6 @@ $ sudo apt-cache madison kubeadm
 $ apt-mark unhold kubeadm && \
   apt-get update && apt-get install -y kubeadm=1.23.4-00 && \
   apt-mark hold kubeadm
-kubeadm was already not hold.
-Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease                                  
-Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease                                                               
-Hit:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease                                                              
-Hit:5 https://packages.microsoft.com/repos/azure-cli focal InRelease
-Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease
-Hit:6 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
-Reading package lists... Done
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following packages will be upgraded:
-  kubeadm
-1 upgraded, 0 newly installed, 0 to remove and 127 not upgraded.
-Need to get 8583 kB of archives.
-After this operation, 0 B of additional disk space will be used.
-Get:1 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubeadm amd64 1.23.4-00 [8583 kB]
-Fetched 8583 kB in 1s (12.2 MB/s)
-(Reading database ... 166962 files and directories currently installed.)
-Preparing to unpack .../kubeadm_1.23.4-00_amd64.deb ...
-Unpacking kubeadm (1.23.4-00) over (1.23.3-00) ...
-Setting up kubeadm (1.23.4-00) ...
-kubeadm set on hold.
 ```
 
 # 4. Activate new version thru kubeadm command
