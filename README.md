@@ -81,7 +81,7 @@ $ sudo apt-cache madison kubeadm
    ...
 ```
 
-# 3. Unhold kubeadm and hold again after upgrading it
+# 3. Unhold kubeadm and hold it again after upgrading it
 ```
 $ apt-mark unhold kubeadm && \
   apt-get update && apt-get install -y kubeadm=1.23.4-00 && \
@@ -134,7 +134,7 @@ W0227 12:39:28.253378 1413873 utils.go:69] The recommended value for "resolvConf
 
 ```
 
-# 5. Unhold kubelet and kubectl and hold again after upgrading them
+# 5. Unhold kubelet and kubectl and hold them again after upgrading them
 ```
 $ apt-mark unhold kubelet kubectl && \
   apt-get update && apt-get install -y kubelet=1.23.4-00 kubectl=1.23.4-00 && \
