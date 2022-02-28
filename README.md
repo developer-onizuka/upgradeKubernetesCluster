@@ -3,8 +3,9 @@
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
 
 # 1. Condition before upgrade
+Master, Worker8 and 9's version is older than Worker1 and 2, because of some reasons such as the timing to join the kubernetes cluster. But, the version should be consitent between them.
 ```
-kubectl get nodes -o wide
+$ kubectl get nodes -o wide
 NAME      STATUS   ROLES                  AGE     VERSION   INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
 master    Ready    control-plane,master   19d     v1.23.3   192.168.33.100   <none>        Ubuntu 20.04.3 LTS   5.4.0-81-generic   docker://20.10.7
 worker1   Ready    node                   5h13m   v1.23.4   192.168.33.101   <none>        Ubuntu 20.04.3 LTS   5.4.0-97-generic   docker://20.10.7
@@ -14,6 +15,7 @@ worker9   Ready    node                   19d     v1.23.3   192.168.33.109   <no
 ```
 
 # 2. Check the upgrade plan
+You can learn which version should be upgrade to.
 ```
 $ kubeadm upgrade plan
 [upgrade/config] Making sure the configuration is correct:
