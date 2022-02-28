@@ -122,7 +122,7 @@ $ apt-mark unhold kubelet kubectl && \
 
 # 6. Condition after upgrade
 ```
-kubectl get nodes -o wide
+$ kubectl get nodes -o wide
 NAME      STATUS   ROLES                  AGE     VERSION   INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
 master    Ready    control-plane,master   19d     v1.23.4   192.168.33.100   <none>        Ubuntu 20.04.3 LTS   5.4.0-81-generic   docker://20.10.7
 worker1   Ready    node                   5h26m   v1.23.4   192.168.33.101   <none>        Ubuntu 20.04.3 LTS   5.4.0-97-generic   docker://20.10.7
