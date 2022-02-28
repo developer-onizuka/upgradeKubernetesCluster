@@ -134,7 +134,7 @@ worker9   Ready    node                   19d     v1.23.3   192.168.33.109   <no
 # 7. Worker Node
 Very similar to Master Node.
 ```
-apt-mark unhold kubeadm && apt-get update && apt-get install -y kubeadm=1.23.4-00 && apt-mark hold kubeadm
-kubeadm upgrade node
-apt-mark unhold kubelet kubectl && apt-get update && apt-get install -y kubelet=1.23.4-00 kubectl=1.23.4-00 && apt-mark hold kubelet kubectl
+$ apt-mark unhold kubeadm && apt-get update && apt-get install -y kubeadm=1.23.4-00 && apt-mark hold kubeadm
+$ kubeadm upgrade node
+$ apt-mark unhold kubelet kubectl && apt-get update && apt-get install -y kubelet=1.23.4-00 kubectl=1.23.4-00 && apt-mark hold kubelet kubectl
 ```
