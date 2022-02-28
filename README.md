@@ -84,8 +84,8 @@ $ sudo apt-cache madison kubeadm
 # 3. Unhold kubeadm and hold again after upgrading it
 ```
 $ apt-mark unhold kubeadm && \
-> apt-get update && apt-get install -y kubeadm=1.23.4-00 && \
-> apt-mark hold kubeadm
+  apt-get update && apt-get install -y kubeadm=1.23.4-00 && \
+  apt-mark hold kubeadm
 kubeadm was already not hold.
 Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease                                  
 Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease                                                               
